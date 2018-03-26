@@ -37,9 +37,9 @@ fn c_str_to_str(c_str: *const c_char) -> Option<String> {
     let bytes = unsafe { CStr::from_ptr(c_str).to_bytes() };
 
     if bytes.is_empty() {
-      None
+        None
     } else {
-      Some(String::from_utf8_lossy(bytes).to_string())
+        Some(String::from_utf8_lossy(bytes).to_string())
     }
   }
 }
