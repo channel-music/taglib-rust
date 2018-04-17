@@ -58,6 +58,7 @@ pub struct File {
 }
 
 /// Represents audio tag metadata.
+#[derive(Debug)]
 pub struct Tag {
   /// The title of the track, if available.
   pub title: Option<String>,
@@ -90,6 +91,7 @@ impl Tag {
 }
 
 /// Common audio file properties.
+#[derive(Debug)]
 pub struct AudioProperties {
   /// The length, in seconds, of the track.
   pub length: u32,
